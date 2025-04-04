@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plasma Cap Maker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Plasma Cap Maker</h1>
+    <p>Upload your profile picture and put on our 🧢</p>
+
+    <div id="imageContainer">
+      <div id="uploadBox">Click to Upload Avatar</div>
+      <input type="file" id="fileInput" accept="image/*" style="display: none;" />
+      <img id="uploadedImage" style="display: none;" />
+
+      <div id="capContainer">
+        <img id="cap" src="https://i.ibb.co/cKFJKWnt/Screenshot-2025-04-04-155356-removebg-preview.png" alt="cap" />
+        <div class="resize-handle top-left"></div>
+        <div class="resize-handle top"></div>
+        <div class="resize-handle top-right"></div>
+        <div class="resize-handle right"></div>
+        <div class="resize-handle bottom-right"></div>
+        <div class="resize-handle bottom"></div>
+        <div class="resize-handle bottom-left"></div>
+        <div class="resize-handle left"></div>
+      </div>
+    </div>
+
+    <div class="button-group">
+      <button id="flipBtn">🔄 Invert Cap</button>
+      <button id="downloadBtn">📥 Download</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
